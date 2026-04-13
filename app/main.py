@@ -44,6 +44,9 @@ async def analyze(handle: str = Query(..., description='Instagram handle pubblic
         clean_handle = sanitize_handle(handle)
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
+    
+    if not clean_handle:
+        raise HTTPException(status_code=400, detail="Invalid Instagram handle")
 
     # Create a temporary directory for the handle
     workdir = ensure_dir(Path(settings.temp_dir) / clean_handle)
