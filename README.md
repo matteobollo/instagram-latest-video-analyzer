@@ -81,8 +81,8 @@ FastAPI
 
 ```env
 APIFY_TOKEN=your_apify_token
-APIFY_REEL_ACTOR_ID=apify/instagram-reel-scraper
-APIFY_COMMENTS_ACTOR_ID=apify/instagram-comment-scraper
+APIFY_REEL_ACTOR_ID=apify~instagram-reel-scraper
+APIFY_COMMENTS_ACTOR_ID=apify~instagram-comment-scraper
 WHISPER_MODEL=base
 PORT=8000
 LOG_LEVEL=INFO
