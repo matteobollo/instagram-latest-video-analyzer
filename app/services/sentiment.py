@@ -2,7 +2,7 @@ from collections import Counter
 
 from app.models import CommentSentiment, SentimentSummary
 
-POSITIVE_TOKENS = {'bella', 'bello', 'great', 'love', 'amazing', 'bravo', 'top', 'fantastic', 'wow', '🔥', '😍', '❤️'}
+POSITIVE_TOKENS = {'bella', 'bello', 'great', 'love', 'amazing', 'bravo', 'top', 'fantastic', 'wow', '🔥', '😍', '❤️', '👏', '🚀', '🔝'}
 NEGATIVE_TOKENS = {'bad', 'terrible', 'hate', 'awful', 'schifo', 'brutto', 'fake', 'worst', '🤮', '😡'}
 
 
